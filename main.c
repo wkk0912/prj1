@@ -9,20 +9,20 @@ void led_pin_init(void)
     TRISF5 = 0;//
     TRISF6 = 0;
     TRISF7 = 0;
-	TRISB2 = 0;
-	
-	TRISA3 = 0;
-	TRISA4 = 0;
-	TRISA5 = 0;
+    TRISB2 = 0;
+
+    TRISA3 = 0;
+    TRISA4 = 0;
+    TRISA5 = 0;
 	
     RF5 = 1;
     RF6 = 1;
     RF7 = 1;
-	RB2 = 1;
+    RB2 = 1;
 	
-	RA3 = 1;//D1
-	RA4 = 1;//D2
-	RA5 = 1;//D3
+    RA3 = 1;//D1
+    RA4 = 1;//D2
+    RA5 = 1;//D3
 }
 
 
@@ -48,7 +48,7 @@ void syswaring(void)
 	else if((ua_err==3)||(ub_err == 3)||(uc_err==3)||(ia_err==3)||(ib_err==3)||(ic_err==3)){sys.err_code = 3;}
 	else if((ua_err==2)||(ub_err == 2)||(uc_err==2)||(ia_err==2)||(ib_err==2)||(ic_err==2)){sys.err_code = 2;}
 	else if((ua_err==1)||(ub_err == 1)||(uc_err==1)||(ia_err==1)||(ib_err==1)||(ic_err==1)){sys.err_code = 1;}
-	//else if(((ua_err==4)&&(ub_err == 4)&&(uc_err==4))||(ia_err==4)||(ib_err==4)||(ic_err==4)){sys.err_code = 4;}
+	else if(((ua_err==4)&&(ub_err == 4)&&(uc_err==4))||(ia_err==4)||(ib_err==4)||(ic_err==4)){sys.err_code = 4;}
 	}
 	if((sys.err_code !=0 && sys.err_code !=4))
 	{
